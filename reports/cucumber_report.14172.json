@@ -1,0 +1,70 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Exchange calculator REST API Test",
+    "line": 1,
+    "id": "exchange-calculator-rest-api-test",
+    "tags": [],
+    "uri": "src\\specs\\exchangeCalculator.feature",
+    "elements": [
+      {
+        "id": "exchange-calculator-rest-api-test;create-currency-using-post-api",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Create currency using POST API",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I create a currency with \"test\" as code, \"test\" as country and 1 value in at \"http://qa-test.cloudbeds.com/app_dev.php/api/v1/currencies/\" using API of administrator \"tR6TI49mh4fbKAuSjm9L\"",
+            "match": {
+              "location": "src\\steps\\create_currency_steps.js:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 422000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I validate the Id of currency that not null",
+            "match": {
+              "location": "src\\steps\\create_currency_steps.js:88"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "src\\steps\\hooks.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
